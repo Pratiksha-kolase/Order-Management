@@ -1,5 +1,6 @@
 package com.example.order.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.http.ResponseEntity;
@@ -17,6 +18,8 @@ public interface OrderService {
 	ResponseEntity<String> updateByOId(Long oId, OrderDto orderDto);
 
 	Optional<OrderModel> getByOId(Long oId);
+
+	List<OrderModel> allData();
 
 	
 

@@ -15,12 +15,9 @@ public interface UserService {
 
 	ResponseEntity<String> login(UserDto userDto);
 
-	List<UserModel> allData();
-
 	Optional<UserModel> getByUser_id(Long user_id);
 
 	Optional<UserModel> getByUsername(String username);
-
 
 	ResponseEntity<String> deleteById(Long user_id);
 

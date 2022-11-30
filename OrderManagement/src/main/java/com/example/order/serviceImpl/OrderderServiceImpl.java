@@ -1,5 +1,6 @@
 package com.example.order.serviceImpl;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,5 +61,12 @@ public class OrderderServiceImpl implements OrderService{
 		orderDao.deleteById(oId);
 		return new ResponseEntity<>("Order Deleted Successfully....", HttpStatus.OK);
 	}
+
+
+	@Override
+	public List<OrderModel> allData() {
+	
+		return orderDao.findAll();
+		}
 	
 }

@@ -48,8 +48,8 @@ public class OrderController {
 	}
 
 	@GetMapping("/getAll")
-	public List<UserModel> allData() {
-		return userService.allData();
+	public List<OrderModel> allData() {
+		return orderService.allData();
 	}
 
 	@DeleteMapping("/deleteMyorder/{oId}")

@@ -91,11 +91,6 @@ public class UserServiceImpl implements UserService{
 		}
 
 	@Override
-	public List<UserModel> allData() {
-		return userDao.findAll();
-	}
-
-	@Override
 	public Optional<UserModel> getByUser_id(Long user_id) {
 	
 		return userDao.findById(user_id);
